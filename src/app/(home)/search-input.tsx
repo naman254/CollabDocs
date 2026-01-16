@@ -8,9 +8,10 @@ import {useRef} from "react";
 import { useSearchParam } from  "@/hooks/use-search-param";
 
 export const SearchInput = () => {
-    const [search, setSearch] = useSearchParam("search");
+    const [search, setSearch] = useSearchParam();
     const [value, setValue] = useState(search);
     const inputRef = useRef<HTMLInputElement>(null);
+    
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);
     };
@@ -40,7 +41,7 @@ export const SearchInput = () => {
                     <SearchIcon/>
                 </Button>
                 {value && (
-                    <Button onClick={handleClear} type = "button" variant= "ghost" size ="icon" className="absolute right-3 top-1/2 -translate-y-1/2 [&_svg]:size-5 rounded-full">
+                <Button onClick={handleClear} type = "button" variant= "ghost" size ="icon" className="absolute right-3 top-1/2 -translate-y-1/2 [&_svg]:size-5 rounded-full">
                     <XIcon/>
                 </Button>
                 )}

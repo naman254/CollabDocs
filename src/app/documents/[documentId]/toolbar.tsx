@@ -73,7 +73,7 @@ const LineHeightButton = () => {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-1 flex flex-col gap-y-1">
-        { lineHeights.map(({label, value, icon: Icon}) => (
+        { lineHeights.map(({label, value, icon: Icon }) => (
           <button
           key={value}
           onClick={() => editor?.chain().focus().setLineHeight(value).run()}
@@ -578,9 +578,9 @@ export const Toolbar = () => {
                 label: "Comment",
                 icon: MessageSquarePlusIcon,
                 onClick: () => {
-                  console.log("TODO: Comment")
+                  editor?.chain().focus().addPendingComment().run();
                 },
-                isActive: false,
+                isActive: editor?.isActive("liveblocksCommentMarker"), 
               },
               {
                 label: "List Todo",
