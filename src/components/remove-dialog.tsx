@@ -15,8 +15,8 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { use } from "react";
-import { useRouter } from "next/router";
+
+import { useRouter } from "next/navigation";
 
 interface RemoveDialogProps {
     documentId: Id<"documents">;

@@ -17,7 +17,6 @@ import{
 
 import { Input } from "./ui/input";
 import { toast } from "sonner";
-import { use } from "react";
 
 interface RenameDialogProps {
     documentId: Id<"documents">;

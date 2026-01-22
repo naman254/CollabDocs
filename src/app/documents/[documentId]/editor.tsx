@@ -15,7 +15,7 @@ import FontFamily from '@tiptap/extension-font-family';
 import TextStyle from '@tiptap/extension-text-style';
 import Underline from '@tiptap/extension-underline';
 import ImageResize from 'tiptap-extension-resize-image';
-import {useEditor, EditorContent, Editor} from "@tiptap/react";
+import {useEditor, EditorContent} from "@tiptap/react";
 import {useLiveblocksExtension} from "@liveblocks/react-tiptap";
 import { useStorage } from '@liveblocks/react';
 import { useEditorStore } from '@/store/use-editor-store';
@@ -37,6 +37,7 @@ export const Editor = ({ initialContent}: EditorProps) => {
   const liveblocks = useLiveblocksExtension({
     initialContent,
     offlineSupport_experimental: true,
+    mentions: true,
 });
   const { setEditor } = useEditorStore();
     const editor = useEditor({

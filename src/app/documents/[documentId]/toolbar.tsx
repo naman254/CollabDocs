@@ -7,7 +7,6 @@ import { BoldIcon,
      ImageIcon,
      ItalicIcon, 
      Link2Icon, 
-     List,
       ListTodoIcon,
        LucideIcon, 
        MessageSquarePlusIcon, 
@@ -24,10 +23,8 @@ import { BoldIcon,
         AlignRightIcon,
         AlignJustifyIcon,
         ListIcon,
-      ListOrderedIcon,
     MinusIcon,
     PlusIcon,
-    ListCollapse,
     ListCollapseIcon} from "lucide-react";
 import { Level } from "@tiptap/extension-heading";
 import { cn } from "@/lib/utils";
@@ -52,8 +49,6 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { set } from "date-fns";
-
 const LineHeightButton = () => {
 
   const {editor} = useEditorStore();
