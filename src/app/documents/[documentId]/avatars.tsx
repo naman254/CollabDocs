@@ -2,7 +2,7 @@
 
 import { ClientSideSuspense } from "@liveblocks/react";
 import {useOthers, useSelf} from "@liveblocks/react/suspense";
-import { Separator } from "react-resizable-panels";
+import { Separator } from "@/components/ui/separator";
 
 const AVATAR_SIZE = 36;
 
