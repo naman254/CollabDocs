@@ -24,7 +24,7 @@ interface DocumentMenuProps {
 export const DocumentMenu = ({documentId, title, onNewTab}: DocumentMenuProps) => {
     return (
         <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild>
         <Button variant = "ghost" size = "icon" className="rounded-full">
             <MoreVertical className="size-4"/>
         </Button>
