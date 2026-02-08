@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CollabDocs - Real time Collaborative Editor
 
-## Getting Started
+A powerful, real-time collaborative document editor, built with Next.js 15, Convex, and Liveblocks.
 
-First, run the development server:
+## 🚀 Live Demo
+**[View Live Demo]([https://your-demo-link.vercel.app](https://collab-docs-9ahj.vercel.app/))** ---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-time Collaboration**: Multi-user editing with live cursors and presence indicators powered by Liveblocks.
+- **Advanced Rich Text Editing**: Comprehensive Tiptap integration including:
+  - Tables, Images (resizable), and Task Lists.
+  - Text alignment, font families, and custom colors.
+  - Highlighting and complex formatting.
+- **Document Management**:
+  - Personal dashboard to create, rename, and delete documents.
+  - Template gallery (Resume, Letter, Project Proposal, etc.) for quick starts.
+  - Organization-based access control.
+- **Comments & Mentions**: Threaded comments and @user mentions for seamless feedback.
+- **Authentication**: Secure login and organization management via Clerk.
+- **Responsive Design**: Fully optimized for desktop and mobile with a custom sidebar and toolbars.
+- **Database & Sync**: High-performance backend and real-time data syncing using Convex.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Backend/Database**: [Convex](https://www.convex.dev/)
+- **Collaboration**: [Liveblocks](https://liveblocks.io/)
+- **Auth**: [Clerk](https://clerk.com/)
+- **Editor**: [Tiptap](https://tiptap.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix UI)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
 
-## Learn More
+## 🏁 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+- Node.js 18+ 
+- A Convex account
+- A Clerk account
+- A Liveblocks account
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/collabdocs.git](https://github.com/your-username/collabdocs.git)
+   cd collabdocs
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies:**
+   ``` bash
+   npm install
+3. **Set up environment variables: Create a .env.local file in the root directory and add your keys:**
+   ``` bash
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+   NEXT_PUBLIC_CONVEX_URL=
+   LIVEBLOCKS_SECRET_KEY=
+4. **Run the development server:**
+   ``` bash
+   npm run dev
+5. **Start Convex backend:**
+   ``` bash
+   npx convex dev
+  
+   
