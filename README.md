@@ -2,8 +2,7 @@
 
 A powerful, real-time collaborative document editor, built with Next.js 15, Convex, and Liveblocks.
 
-## 🚀 Live Demo
-**[View Live Demo]([https://your-demo-link.vercel.app](https://collab-docs-9ahj.vercel.app/))** ---
+[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://collab-docs-9ahj.vercel.app/) ---
 
 ## ✨ Features
 
